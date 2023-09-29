@@ -3,24 +3,23 @@ import { useCookies } from 'react-cookie';
 import "./Forms.css";
 
 const Forms=()=>{
-    const [cookies, setCookie,removeCookie] = useCookies(['user']);
+    const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
   
     const handleLogin = () => {
-      setCookie('userEmail', email, { path: '/' });
-      setCookie('userPassword', password, { path: '/' });
+      setCookie('user', email, { path: '/' });
     };
     const handleLogout = () => {
-        removeCookie('userEmail', { path: '/' });
-        removeCookie('userPassword', { path: '/' });
+      console.log('Logout button clicked');
+        removeCookie('user', { path: '/' });
       };
     return (
       <>
       <div className="container">
       <div className="form-body">
-        {cookies.userEmail ? <h1><span style={{color:"red"}}>Welcome</span>, {cookies.userEmail}!</h1> : <h1>Please log in.</h1>}
+        {cookies.user ? <h1><span style={{color:"red"}}>Welcome</span>, {cookies.user}!</h1> : <h1>Please log in.</h1>}
         <input
           type="text"
           placeholder="Email"
