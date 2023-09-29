@@ -13,7 +13,8 @@ const Forms=()=>{
       setCookie('userPassword', password, { path: '/' });
     };
     const handleLogout = () => {
-        removeCookie('user', { path: '/' });
+        removeCookie('userEmail', { path: '/' });
+        removeCookie('userPassword', { path: '/' });
       };
     return (
       <>
