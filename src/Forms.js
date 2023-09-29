@@ -10,7 +10,7 @@ const Forms=()=>{
   
     const handleLogin = () => {
       setCookie('userEmail', email, { path: '/' });
-      setCookie('userPassword', email, { path: '/' });
+      setCookie('userPassword', password, { path: '/' });
     };
     const handleLogout = () => {
         removeCookie('user', { path: '/' });
@@ -19,7 +19,7 @@ const Forms=()=>{
       <>
       <div className="container">
       <div className="form-body">
-        {cookies.user ? <h1><span style={{color:"red"}}>Welcome</span>, {cookies.userEmail}!</h1> : <h1>Please log in.</h1>}
+        {cookies.userEmail ? <h1><span style={{color:"red"}}>Welcome</span>, {cookies.userEmail}!</h1> : <h1>Please log in.</h1>}
         <input
           type="text"
           placeholder="Email"
