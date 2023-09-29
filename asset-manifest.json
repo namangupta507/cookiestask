@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cookiestask/static/css/main.f87ca029.css",
-    "main.js": "/cookiestask/static/js/main.2d10e82c.js",
+    "main.js": "/cookiestask/static/js/main.ca3b61de.js",
     "static/js/787.24772ec4.chunk.js": "/cookiestask/static/js/787.24772ec4.chunk.js",
     "index.html": "/cookiestask/index.html",
     "main.f87ca029.css.map": "/cookiestask/static/css/main.f87ca029.css.map",
-    "main.2d10e82c.js.map": "/cookiestask/static/js/main.2d10e82c.js.map",
+    "main.ca3b61de.js.map": "/cookiestask/static/js/main.ca3b61de.js.map",
     "787.24772ec4.chunk.js.map": "/cookiestask/static/js/787.24772ec4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f87ca029.css",
-    "static/js/main.2d10e82c.js"
+    "static/js/main.ca3b61de.js"
   ]
 }
